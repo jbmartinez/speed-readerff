@@ -3,13 +3,15 @@ This is a speed reading extension for Firefox based on [OpenSpritz](https://gith
 which is in turn ispired by [Spritz](http://www.spritzinc.com/).
 
 Right now is almost a 1:1 OpenSpritz bookmarklet installed on the browser,
-slightly modified to turn it in a browser extension. Nevertheless, it work
-very well in my tests. Some improvements might come on the future.
+slightly modified to turn it in a browser extension. Nevertheless, it seems
+to work very well in my tests. Some improvements might come on the future.
 
 ## Installation
 Download the Firofox [Add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation)
 and build the extension with the command `cfx xpi`, then load the resulting
 xpi file onto Firefox.
+
+You also can simply download the speed-readerff.xpi file from this repository.
 
 ## Known Bugs
 * Page reloads after closing OpenSpritz pane.
