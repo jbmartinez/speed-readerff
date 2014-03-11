@@ -1,0 +1,9 @@
+{
+  "name": "speed-readerff",
+  "title": "Speed-reader for Firefox",
+  "id": "jid1-6SIefAU4YzNXtQ",
+  "description": "a simple spritz-like extension based on OpenSrpitz",
+  "author": "Juan Martínez",
+  "license": "MIT",
+  "version": "0.1"
+}
