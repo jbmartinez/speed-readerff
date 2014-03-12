@@ -7,14 +7,13 @@ slightly modified to turn it in a browser extension. Nevertheless, it seems
 to work very well in my tests. Some improvements might come on the future.
 
 ## Installation
-Download the Firofox [Add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation)
+Download the Firefox [Add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation)
 and build the extension with the command `cfx xpi`, then load the resulting
 xpi file onto Firefox.
 
 You also can simply download the speed-readerff.xpi file from this repository.
 
 ## Known Bugs
-* Page reloads after closing OpenSpritz pane.
 * Icon is awful.
 
 ## License

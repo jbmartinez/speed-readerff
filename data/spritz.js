@@ -31,7 +31,9 @@ function create_spritz(url){
                 document.body.insertBefore(ele, document.body.firstChild);
                 document.getElementById("spritz_toggle").style.display = "none";
             } else {
-                spritzContainer.style.display ="block"
+                spritzContainer.style.display ="block";
+                document.getElementById("spritz_spacer").style.display = "block";
+                document.getElementById("spritz_holder").style.display = "block";
             };
 
             document.getElementById("spritz_close").addEventListener("click", hide_spritz);
