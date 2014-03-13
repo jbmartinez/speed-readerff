@@ -165,7 +165,8 @@ function spritzify(input){
     function startSpritz() {
 
         document.getElementById("spritz_toggle").style.display = "block";
-        document.getElementById("spritz_toggle").textContent = "Pause";
+        //document.getElementById("spritz_toggle").textContent = "Pause";
+        document.getElementById("spritz_toggle").className = "icon-pause";
 
         running = true;
 
@@ -184,7 +185,8 @@ function spritzify(input){
             clearTimeout(spritz_timers[i]);
         }
 
-        document.getElementById("spritz_toggle").textContent = "Play";
+        //document.getElementById("spritz_toggle").textContent = "Play";
+        document.getElementById("spritz_toggle").className = "icon-play";
         running = false;
     }
 
