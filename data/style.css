@@ -126,6 +126,22 @@ body{
     font-family: 'Droid Sans Mono', sans-serif;
 }
 
+.btn {
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  color: #333333;
+  font-size: 10px;
+  background: #ffffff;
+  padding: 5px 5px 5px 5px;
+  border: solid #333333 2px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #de0000;
+  border-color: #de0000;
+}
+
 /* -- icons rules --- */
 @font-face {
 	font-family: 'opspritz-icomoon';
@@ -134,7 +150,8 @@ body{
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+/*[class^="icon-"], [class*=" icon-"] {*/
+.icon-play, .icon-pause, .icon-close {
 	font-family: 'opspritz-icomoon';
 	speak: none;
 	font-style: normal;
