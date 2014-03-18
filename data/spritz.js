@@ -36,6 +36,8 @@ function create_spritz(url){
                 document.getElementById("spritz_holder").style.display = "block";
             };
 
+            document.getElementById("spritz_holder").addEventListener("keydown", keys_spritz);
+            document.getElementById("spritz_holder").focus();
             document.getElementById("spritz_close").addEventListener("click", hide_spritz);
             document.getElementById("spritz_selector").addEventListener("change", function(e) {
                 clearTimeouts();
@@ -58,6 +60,15 @@ function getURL(url, callback) {
 
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
+}
+
+// Handles event keys for closing when pressing ESC
+function keys_spritz(event){
+    var key = event.keyCode || event.which;
+    // Hide it when Ecape key is pressed
+    if (key == 27){
+        hide_spritz();
+    }
 }
 
 function hide_spritz(){
@@ -165,7 +176,10 @@ function spritzify(input){
     function startSpritz() {
 
         document.getElementById("spritz_toggle").style.display = "block";
-        document.getElementById("spritz_toggle").textContent = "Pause";
+        //document.getElementById("spritz_toggle").textContent = "Pause";
+        //document.getElementById("spritz_toggle").className = "icon-pause";
+        document.getElementById("spritz_toggle").classList.add("icon-pause");
+        document.getElementById("spritz_toggle").classList.remove("icon-play");
 
         running = true;
 
@@ -184,7 +198,10 @@ function spritzify(input){
             clearTimeout(spritz_timers[i]);
         }
 
-        document.getElementById("spritz_toggle").textContent = "Play";
+        //document.getElementById("spritz_toggle").textContent = "Play";
+        //document.getElementById("spritz_toggle").className = "icon-play";
+        document.getElementById("spritz_toggle").classList.remove("icon-pause");
+        document.getElementById("spritz_toggle").classList.add("icon-play");
         running = false;
     }
 

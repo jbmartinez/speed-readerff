@@ -1,7 +1,7 @@
 <link href='https://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
 <!-- link href='https://rawgithub.com/Miserlou/OpenSpritz/dev/style.css' rel='stylesheet' type='text/css' -->
 
-<div id="spritz_holder">
+<div id="spritz_holder" tabindex="1">
         <div id="spritz_container">
 
             <div id="guide_top">
@@ -35,16 +35,17 @@
               <option value="950">950wpm</option>
             </select>
 
-            <button type="button" id="spritz_toggle">Pause</button>
+            <!-- button type="button" id="spritz_toggle">Pause</button -->
+            <button type="button" class="btn" id="spritz_toggle"></button>
 
             <span id="spritz_credits">
               <a href="http://github.com/Miserlou/OpenSpritz">
                 <i>OpenSpritz 1.1</i>
               </a>
-              <!-- a href="" id="spritz_close">
+              <!-- a href="#" id="spritz_close" class="icon-close" title="close">
                 <i>[x]</i>
               </a -->
-              <button type="button" id="spritz_close">Close</button>
+              <button type="button" class="btn icon-close" id="spritz_close" title="close"></button>
             </span>
     </div>
 </div>

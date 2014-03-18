@@ -6,6 +6,8 @@ Right now is almost a 1:1 OpenSpritz bookmarklet installed on the browser,
 slightly modified to turn it in a browser extension. Nevertheless, it seems
 to work very well in my tests. Some improvements might come on the future.
 
+Control icons are part of [IcoMoon - Free icon set](http://icomoon.io/#icons), designed by Keyamoon.
+
 ## Installation
 Download the Firefox [Add-on SDK](https://developer.mozilla.org/en-US/Add-ons/SDK/Tutorials/Installation)
 and build the extension with the command `cfx xpi`, then load the resulting
